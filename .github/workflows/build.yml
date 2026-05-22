@@ -18,10 +18,10 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: 9.0.x
+          dotnet-version: 10.0.x
 
       - name: Restore solution
-        run: dotnet restore ./SystemMonitorAgent.slnx
+        run: dotnet restore ./SystemMonitorAgent.slnx -r win-x64
 
       - name: Build solution
         run: dotnet build ./SystemMonitorAgent.slnx --no-restore -c Release
