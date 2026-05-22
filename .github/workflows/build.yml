@@ -40,5 +40,5 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v5
         with:
-          name: HelloWorldWindowsService
-          path: publish/HelloWorldWindowsService.exe
+          name: SystemMonitorAgent
+          path: publish/SystemMonitorAgent.exe
